@@ -1,0 +1,57 @@
+AI Agent Concepts
+
+An AI agent is a system that perceives its environment, makes decisions, and takes actions to achieve a goal. Unlike a simple chatbot that only answers questions, an agent can plan, use tools, and operate autonomously over multiple steps.
+
+Key Properties of Agents
+
+Autonomy: An agent operates without constant human guidance. It decides what to do next based on its current state and goal.
+
+Reactivity: An agent responds to changes in its environment. If a tool returns an unexpected result, the agent adapts.
+
+Proactivity: An agent does not just react - it takes initiative to achieve its goal, planning ahead rather than waiting for instructions.
+
+Social ability: Agents can interact with other agents, people, or external systems.
+
+The Agent Loop
+
+Every agent follows some version of this loop:
+
+1. Perceive - receive input (user message, tool result, sensor data)
+2. Think - reason about what to do next
+3. Act - call a tool, generate text, or make a decision
+4. Observe - receive the result of the action
+5. Repeat until the task is done
+
+Tool Use
+
+Tools are functions the agent can call to interact with the world. Common tools include web search, code execution, file reading and writing, database queries, and API calls.
+
+The model does not call tools directly. It outputs a structured request describing which tool to call and with what arguments. Your code intercepts that, runs the function, and returns the result.
+
+Memory Systems
+
+Agents can have different types of memory:
+
+Short-term memory is the current conversation context. It is limited by the model's context window.
+
+Long-term memory persists across sessions. It can be stored in files, databases, or vector stores and retrieved when relevant.
+
+Episodic memory stores what happened: "The user asked about Python yesterday."
+
+Semantic memory stores what was learned: "The user prefers concise code examples."
+
+Planning
+
+Simple agents react to each input without planning. More advanced agents break a goal into sub-tasks and execute them in sequence. The ReAct pattern (Reason then Act) is a popular approach where the agent writes its reasoning before each action.
+
+Multi-Agent Systems
+
+Complex tasks can be split across multiple specialized agents. A researcher agent gathers information. A writer agent produces content. An editor agent reviews and improves it. An orchestrator coordinates the flow between them.
+
+This mirrors how human teams work: specialists doing focused work, managed by a coordinator who routes outputs between them.
+
+RAG (Retrieval-Augmented Generation)
+
+RAG extends an agent with the ability to read from a knowledge base. When a question comes in, the system retrieves the most relevant documents and injects them into the prompt. The model answers using that retrieved context, not just its training data.
+
+This is how you build agents that know about your private data, recent events, or any domain-specific knowledge.

@@ -1,0 +1,69 @@
+Python Programming Guide
+
+Python is a high-level, interpreted programming language known for its simplicity and readability. It was created by Guido van Rossum and first released in 1991.
+
+Why Python?
+
+Python uses English-like syntax, making it easier to learn than most languages. A task that takes 10 lines in Java often takes 3 in Python. It also has a massive ecosystem of libraries for almost every purpose.
+
+Python is the dominant language in data science, machine learning, and AI, largely because of libraries like NumPy, Pandas, Scikit-learn, TensorFlow, and PyTorch.
+
+Core Data Types
+
+Integers are whole numbers: 1, 42, -7
+Floats are decimal numbers: 3.14, -0.5
+Strings are text: "hello", 'world'
+Booleans are True or False
+Lists are ordered, mutable collections: [1, 2, 3]
+Tuples are ordered, immutable collections: (1, 2, 3)
+Dictionaries are key-value pairs: {"name": "Alice", "age": 30}
+Sets are unordered collections of unique values: {1, 2, 3}
+
+Functions
+
+A function is defined with the def keyword. Functions take zero or more arguments and optionally return a value.
+
+def greet(name):
+    return f"Hello, {name}!"
+
+Lambda functions are small anonymous functions written in one line.
+
+square = lambda x: x ** 2
+
+Classes and Objects
+
+Python supports object-oriented programming. A class is a blueprint for creating objects.
+
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        return f"{self.name} says woof!"
+
+Working with Files
+
+You can read and write files using the built-in open() function.
+
+with open("file.txt", "r") as f:
+    content = f.read()
+
+with open("output.txt", "w") as f:
+    f.write("Hello, file!")
+
+Virtual Environments
+
+A virtual environment is an isolated Python installation for a project. It lets you install packages without affecting the global Python setup.
+
+Create one with: python -m venv venv
+Activate on Windows: venv\Scripts\activate
+Activate on Mac/Linux: source venv/bin/activate
+
+Popular Libraries
+
+NumPy: numerical computing and array operations
+Pandas: data manipulation and analysis
+Matplotlib: data visualization and plotting
+Requests: making HTTP requests to web APIs
+FastAPI: building REST APIs quickly
+Pytest: writing and running tests

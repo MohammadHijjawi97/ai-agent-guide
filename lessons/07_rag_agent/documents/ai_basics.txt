@@ -1,0 +1,35 @@
+Artificial Intelligence Basics
+
+Artificial intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems. These processes include learning, reasoning, and self-correction.
+
+Types of AI
+
+Narrow AI, also called weak AI, is designed for a specific task. Examples include voice assistants like Siri and Alexa, recommendation systems on Netflix and Spotify, and image recognition in cameras.
+
+General AI, also called strong AI or AGI, refers to a machine with the ability to perform any intellectual task that a human can. As of 2026, no true AGI exists, though it remains an active area of research.
+
+Machine Learning
+
+Machine learning is a subset of AI where systems learn from data rather than being explicitly programmed. Instead of writing rules, you feed the system examples and it figures out the patterns on its own.
+
+Supervised learning trains a model on labeled examples. You show it thousands of cat photos labeled "cat" and dog photos labeled "dog", and it learns to tell them apart.
+
+Unsupervised learning finds hidden patterns in unlabeled data. Clustering algorithms group similar items together without being told what the groups should be.
+
+Reinforcement learning trains an agent by rewarding good actions and penalizing bad ones. This is how AlphaGo learned to play Go at a superhuman level.
+
+Deep Learning
+
+Deep learning uses neural networks with many layers to learn complex patterns. It is the technology behind image recognition, speech-to-text, and large language models.
+
+A neural network is inspired by the brain. It consists of layers of interconnected nodes called neurons. Data flows through the layers, each one extracting higher-level features than the last.
+
+Large Language Models
+
+Large language models (LLMs) are deep learning models trained on massive amounts of text. They learn to predict the next word in a sequence, and through this simple objective they acquire broad knowledge and reasoning ability.
+
+GPT-4, Gemini, and other modern LLMs are examples. They can write code, answer questions, translate languages, summarize documents, and much more.
+
+Applications of AI
+
+AI is used in healthcare for medical image analysis, drug discovery, and personalized treatment plans. In finance, it powers fraud detection and algorithmic trading. In transportation, it enables self-driving vehicles. In education, it personalizes learning paths for students.
