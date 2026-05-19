@@ -1,0 +1,26 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+.env.local
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output files from lessons
+lessons/05_full_project/output/
